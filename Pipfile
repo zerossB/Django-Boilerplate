@@ -9,6 +9,7 @@ black = "*"
 pytest = "*"
 pytest-django = "*"
 requests2 = "*"
+urllib3 = ">=1.24.2"
 
 [packages]
 django = "*"
