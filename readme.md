@@ -2,7 +2,6 @@
 Project for creating ready-made features of a django project.
 For example:
 
-- Authentication
 - Custom User creation
 - Dependencies with Pipenv
 - Docker
