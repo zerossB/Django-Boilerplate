@@ -12,7 +12,14 @@ from core.models import BaseModel
 class User(AbstractUser, BaseModel):
 
     uuid = models.UUIDField(_("User UUID"), editable=False, default=uuid.uuid4)
-    jwt = models.TextField(_("JWT"), unique=True, null=True, blank=True)
+    jwt = models.CharField(
+        _("JWT Field"),
+        max_length=255,
+        unique=True,
+        editable=False,
+        blank=True,
+        null=True,
+    )
 
     @property
     def name(self):
