@@ -12,4 +12,4 @@ For example:
 
 Start a new django project with this Boilerplate
 
-`django-admin startapp --template=https://github.com/bildvitta/django-boilerplate//archive/master.zip .`
+`django-admin startapp --template=https://github.com/zerossB/Django-Boilerplate/archive/master.zip .`
