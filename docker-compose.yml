@@ -5,6 +5,8 @@ services:
     image: postgres
     ports:
       - "5432:5432"
+    environment: 
+      POSTGRES_PASSWORD: django_boilerplate
 
   memcached:
     image: memcached
@@ -16,7 +18,7 @@ services:
 
   web:
     build: .
-    image: bivi/comissionamento.server:alpine
+    image: zerossb/django_boilerplate.server:alpine
     command: sh /code/scripts/start.sh
     restart: always
     volumes:
